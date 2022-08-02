@@ -77,6 +77,7 @@ h1{
   height: 546px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-self: end;
   border-radius: 20px;
   padding: 0 20px 0 20px;
@@ -86,15 +87,6 @@ h1{
   &:hover{
     border: 1px solid $red;
   }
-}
-.pizza1{
-  margin-top: 79px;
-}
-.pizza2{
-  margin-top: 59px;
-}
-.pizza4{
-  margin-top: 59px;
 }
 .pizza-img{
   width: 196px;
@@ -209,4 +201,24 @@ h1{
       cursor: pointer;
     }
   }
+}
+.ta {
+  display: flex;
+  justify-content: space-between;
+  &:first-child {
+    display: none;
+  }
+}
+.pizza-text{
+  display: flex;
+  flex-direction: column;
+}
+.pizza-delete{
+  padding-top: 20px;
+  width: 100px;
+}
+.delete-order{
+  display: flex;
+  justify-content: right;
+  margin-bottom: 150px;
 }

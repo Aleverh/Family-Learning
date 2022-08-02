@@ -27,82 +27,31 @@
 <main>
     <h1>Пицца</h1>
     <div class="menu">
-        <div class="pizza">
-            <img class="pizza-img" src="pictures/франческо.png">
-            <h3 class="pizza-h3">Франческа</h3>
-            <div class="stars"></div>
-            <p class="text">Сливочный соус дор-блю, сыр моцарелла, салями, бекон</p>
-            <div class="buying pizza1">
-                <button class="buy buy1">Заказать</button>
-                <div class="price1 price">199 грн</div>
-            </div>
-        </div>
-        <div class="pizza">
-            <img class="pizza-img" src="pictures/карбонара.png">
-            <h3 class="pizza-h3">Карбонара</h3>
-            <div class="stars"></div>
-            <p class="text">Сливочный соус сыр моцарелла, бекон, шампиньоны, ветчина, сыр пармезан, яйцо куриное</p>
-            <div class="buying pizza2">
-                <button class="buy buy2">Заказать</button>
-                <div class="price2 price">219 грн</div>
-            </div>
-        </div>
-        <div class="pizza">
-            <img class="pizza-img" src="pictures/ricco.png">
-            <h3 class="pizza-h3">Ricco</h3>
-            <div class="stars"></div>
-            <p class="text">Соус из томатов, салями, ветчина, охотничьи колбаски, бекон, копчёное куриное филе, сыр моцарелла, шампиньоны, маринованный лук, болгарский перец, помидоры, маслины, чесночное масло</p>
-            <div class="buying">
-                <button class="buy buy3">Заказать</button>
-                <div class="price3 price">229 грн</div>
-            </div>
-        </div>
-        <div class="pizza">
-            <img class="pizza-img" src="pictures/чилийская.png">
-            <h3 class="pizza-h3">Чилийская</h3>
-            <div class="stars"></div>
-            <p class="text">Соус из томатов, сыр моцарелла, куриное филе, салями, соус острый, чесночное масло</p>
-            <div class="buying pizza4">
-                <button class="buy buy4">Заказать</button>
-                <div class="price4 price">199 грн</div>
-            </div>
-        </div>
     </div>
     <div class="modal hidden">
         <div class="modal-box">
         <button class="close-modal">&times;</button>
         <p class="order">Ваш заказ:</p>
-            <table class="ta">
-                <tr>
-                    <td rowspan="3" width="184px">
-                        <img class="pizza-table-img" width="100%" height="100%">
-                    </td>
-                    <td>
-                        <h3 class="pizza-name pizza-h3"></h3>
-                    </td>
-                    <td class="delete-order">
-                        <button class="delete-busket"><img class="delete-busket-img" src="pictures/delete-busket.svg" height="5%" width="5%"></button>
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="3">
-                        <p class="pizza-info text"></p>
-                    </td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>
-                        <p class="pizza-price price"></p>
-                    </td>
-                    <td>
-                        <div class="border">
+            <div class="ta">
+                <img class="pizza-table-img" width="25%" height="25%">
+                <div class="pizza-text">
+                    <h3 class="pizza-name pizza-h3"></h3>
+
+                    <p class="pizza-info text"></p>
+
+                    <p class="pizza-price price"></p>
+                </div>
+                <div class="pizza-delete">
+                    <div class="delete-order">
+                        <button class="delete-busket"><img class="delete-busket-img" src="pictures/delete-busket.svg" height="25px" width="25px"></button>
+                    </div>
+                    <div class="border">
                         <button class="minus">-</button>
                         <div class="how-many">0</div>
                         <button class="plus">+</button>
-                        </div>
-                    </td>
-                </tr>
-            </table>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </main>
