@@ -1,0 +1,189 @@
+body {
+  margin: 0;
+  background: #F9F9F9;
+}
+
+header {
+  background: #ff9f6a;
+  height: 90px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: auto;
+  padding: 0 10%;
+}
+
+.sec1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.logo {
+  font-family: Lobster;
+  font-size: 40px;
+  margin: 0 0 0 100px;
+}
+
+.logo1 {
+  margin: 0 0 0 0;
+}
+
+.logo2 {
+  margin: -20px 0 0 55px;
+}
+
+.time {
+  background: url("pictures/clock.png") no-repeat;
+  padding-left: 46px;
+  font-family: Caveat;
+  font-size: 30px;
+  margin-left: 70px;
+}
+
+.basket {
+  display: flex;
+  justify-content: space-around;
+  background: #ff9f6a;
+  border-radius: 37px;
+  border: 2px solid white;
+  height: 46px;
+  width: 200px;
+  align-items: center;
+  margin: auto 100px;
+}
+.basket:hover {
+  box-shadow: 0px 0px 5px black;
+}
+
+main {
+  width: 1308px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-family: Caveat;
+  font-size: 50px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 1%;
+  margin: 0 auto;
+}
+
+.stars {
+  width: 115px;
+  min-height: 21px;
+  background: url("pictures/Star yellow.png");
+}
+
+.pizza {
+  width: 24%;
+  height: 546px;
+  display: flex;
+  flex-direction: column;
+  align-self: end;
+  border-radius: 20px;
+  padding: 0 20px 0 20px;
+  background: #ffffff;
+  box-sizing: border-box;
+  border: 1px solid #ffffff;
+}
+.pizza:hover {
+  border: 1px solid #ff0c19;
+}
+
+.pizza1 {
+  margin-top: 79px;
+}
+
+.pizza2 {
+  margin-top: 59px;
+}
+
+.pizza4 {
+  margin-top: 59px;
+}
+
+.pizza-img {
+  width: 196px;
+  height: 196px;
+  margin: 10px auto;
+  border-radius: 20px;
+}
+
+.pizza-h3 {
+  margin: 20px 0 10px 0;
+  font-size: 30px;
+  font-family: Caveat;
+}
+
+.text {
+  font-family: Lobster;
+  margin-bottom: 50px;
+}
+
+.buying {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.buy {
+  font-family: Caveat;
+  border-radius: 50px;
+  width: 130px;
+  height: 45px;
+  background: #ff9f6a;
+  border: 0;
+  font-size: 23px;
+  color: #ffffff;
+}
+.buy:hover {
+  box-shadow: 0px 0px 5px black;
+}
+
+.price {
+  color: #ff9f6a;
+  font-family: Caveat;
+  font-size: 25px;
+}
+
+.hidden {
+  display: none;
+}
+
+.close-modal {
+  position: absolute;
+  top: 1.2rem;
+  right: 2rem;
+  font-size: 5rem;
+  color: #333;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  height: 500px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+.order {
+  font-family: Caveat;
+  font-size: 50px;
+  margin-top: 0;
+}

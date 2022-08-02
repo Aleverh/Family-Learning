@@ -4,6 +4,7 @@ $sandColor: #e2c499;
 $yellowColor: #e8a735;
 $redColor: #c8000a;
 $brownColor: #a11217a9;
+$black: #161515;
 
 @mixin font ($f, $z, $w, $lh, $c: #474747) {
     font-family: $f;
@@ -37,7 +38,15 @@ $brownColor: #a11217a9;
     background: $brownColor;
     border-radius: 5px;
     padding: 0 10px;
-    @include font('Open Sans', getFontSize(20px), 400, getFontSize(30px), #fff);
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    @include font('Open Sans', getFontSize(20px), 400, getFontSize(40px), #fff);
+    transition: all 0.2s ease;
+
+    &:hover {
+        transform: scale(1.1);
+    }
 }
 
 .wrapper {
@@ -64,8 +73,9 @@ $brownColor: #a11217a9;
     }
 
     &__menu {
-        width: 30%;
+        width: 50%;
         display: flex;
+        justify-content: space-between;
         gap: 20px;
 
     }
@@ -76,13 +86,29 @@ $brownColor: #a11217a9;
 
     &__basket {
         cursor: pointer;
+        width: 100px;
+
+        // margin-right: 20px;
         img {
-            height: 50px;
+            height: 50%;
+            width: 50%;
             object-fit: contain;
+            object-position: center;
+        }
+
+        &:after {
+            content: '0';
+            padding: 5px;
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            background: #c8000a;
+            @include position(relative, 0, -10px)
         }
     }
 }
 
+//--------------------------------------
 .content {
     width: 80%;
     margin: 0 auto;
@@ -91,66 +117,79 @@ $brownColor: #a11217a9;
 .menu {
     margin-top: 120px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    gap: 5%;
+    gap: 2%;
 
     &__card {}
 }
 
+//-----------------------pizza card---------------------
 .card {
-    width: 20%;
-    height: 500px;
+    width: 23%;
+    height: 600px;
     background: $brownColor;
     border-radius: 10px;
+    padding: 15px;
+    display: grid;
+    grid-template-rows: 50% 30px 130px repeat(2, 40px);
+    grid-template-columns: repeat(2, 1fr);
+    align-content: space-between;
+    gap: 10px;
 
     &__img {
-        width: 100%;
+        grid-column: span 2;
+        position: relative;
 
         img {
+            height: 100%;
             width: 100%;
+            object-fit: contain;
         }
     }
 
     &__title {
-        margin-top: 10px;
-        @include font($defaultFontFamily, getFontSize(30px), 500, 1, )
+        grid-column: span 2;
+        @include font($defaultFontFamily, getFontSize(30px), 500, 1, $black)
     }
 
     &__description {
-        height: 70px;
-        margin-top: 10px;
-        @include font($defaultFontFamily, getFontSize(20px), 400, 1, )
-    }
-
-    &__button {
-        margin-top: 5px;
-        @extend %button;
+        grid-column: span 2;
+        @include font($defaultFontFamily, getFontSize(20px), 400, 1, $black)
     }
 
     .price {
         @extend %button;
-        margin-top: 5px;
         color: #474747;
         background: #e2c499;
     }
 
     .size {
         @extend %button;
-        margin-top: 5px;
         color: #474747;
         background: #e2c499;
-        cursor: pointer;
     }
 
     .size-chozen {
         background: rgb(164, 164, 200);
+    }
 
+    &__button {
+        grid-column: span 2;
+        justify-self: center;
+        @extend %button;
+        width: 70%;
+
+        &:hover {
+            transform: scale(1.1);
+        }
     }
 }
 
+// --------------------modal------------------------
 .modal {
-    @include position(absolute, 0, 70%);
-    width: 30%;
+    @include position(absolute, 0, 60%);
+    width: 40%;
     height: 100%;
     background: #f18b69;
     border-radius: 10px;
@@ -158,9 +197,12 @@ $brownColor: #a11217a9;
 
     &__close {
         font-size: getFontSize(40px);
-        cursor: pointer;
-        text-align: end;
+        display: flex;
         margin: 10px 10px 0 0;
+        justify-content: flex-end;
+        span {
+            cursor: pointer;
+        }
     }
 
     &__empty {
@@ -177,11 +219,23 @@ $brownColor: #a11217a9;
     border-bottom: 2px solid rgba(0, 0, 0, 0.3);
     display: flex;
     justify-content: space-between;
-    padding-bottom: 10px;
+    padding: 10px;
+
+    &__remove {
+        font-size: getFontSize(30px);
+        cursor: pointer;
+    }
 
     &__img {
-        height: 100%;
+        width: 70px;
         margin-left: 10px;
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+            object-position: top;
+        }
     }
 
     &__name {

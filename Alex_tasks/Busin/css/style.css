@@ -7,7 +7,6 @@
 *,
 *:before,
 *:after {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -87,13 +86,11 @@ h6 {
 }
 
 .difference__block__statistic .statistic__amount, .amazingServices .infoCard__circle {
-  -webkit-box-shadow: -3px 6px 11px -2px rgba(106, 105, 105, 0.2);
-          box-shadow: -3px 6px 11px -2px rgba(106, 105, 105, 0.2);
+  box-shadow: -3px 6px 11px -2px rgba(106, 105, 105, 0.2);
 }
 
 .ourCompany__block a, .amazingServices a, .header h2 {
   text-transform: uppercase;
-  background: -webkit-gradient(linear, right top, left top, color-stop(3.66%, #430CB9), color-stop(108.54%, #9E00FF)), #ffffff;
   background: linear-gradient(270deg, #430CB9 3.66%, #9E00FF 108.54%), #ffffff;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -107,8 +104,7 @@ h6 {
 }
 
 .difference__block {
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
+  flex-shrink: 0;
   width: 66.7236954662%;
   background: #ffffff;
   border-radius: 30px;
@@ -126,8 +122,7 @@ h6 {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 .wrapper {
@@ -160,12 +155,8 @@ h5 {
 
 .header {
   margin-top: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 .header h2 {
   font-family: Inter;
@@ -177,74 +168,11 @@ h5 {
 }
 .header .nav {
   width: 78.9563%;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-rows: (auto)[2];
   grid-template-rows: repeat(2, auto);
-  -ms-grid-columns: (auto)[7];
   grid-template-columns: repeat(7, auto);
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: end;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-.header .nav > *:nth-child(1) {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-}
-.header .nav > *:nth-child(2) {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-}
-.header .nav > *:nth-child(3) {
-  -ms-grid-row: 1;
-  -ms-grid-column: 3;
-}
-.header .nav > *:nth-child(4) {
-  -ms-grid-row: 1;
-  -ms-grid-column: 4;
-}
-.header .nav > *:nth-child(5) {
-  -ms-grid-row: 1;
-  -ms-grid-column: 5;
-}
-.header .nav > *:nth-child(6) {
-  -ms-grid-row: 1;
-  -ms-grid-column: 6;
-}
-.header .nav > *:nth-child(7) {
-  -ms-grid-row: 1;
-  -ms-grid-column: 7;
-}
-.header .nav > *:nth-child(8) {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-}
-.header .nav > *:nth-child(9) {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
-}
-.header .nav > *:nth-child(10) {
-  -ms-grid-row: 2;
-  -ms-grid-column: 3;
-}
-.header .nav > *:nth-child(11) {
-  -ms-grid-row: 2;
-  -ms-grid-column: 4;
-}
-.header .nav > *:nth-child(12) {
-  -ms-grid-row: 2;
-  -ms-grid-column: 5;
-}
-.header .nav > *:nth-child(13) {
-  -ms-grid-row: 2;
-  -ms-grid-column: 6;
-}
-.header .nav > *:nth-child(14) {
-  -ms-grid-row: 2;
-  -ms-grid-column: 7;
+  align-items: end;
+  justify-content: space-between;
 }
 .header .nav__link {
   font-family: "Open Sans";
@@ -258,9 +186,7 @@ h5 {
   border: 2.5px solid #f64872;
   border-radius: 2.5px;
   background-color: #f64872;
-  -ms-flex-item-align: start;
-      -ms-grid-row-align: start;
-      align-self: start;
+  align-self: start;
 }
 .header .nav__button {
   padding: 7px 1px;
@@ -271,18 +197,10 @@ h5 {
 .front {
   margin-top: 67px;
   height: 639px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .front h3 {
   font-family: "Open Sans";
@@ -318,7 +236,6 @@ h5 {
   width: 251px;
   height: 74px;
   border-radius: 18px;
-  background: -webkit-gradient(linear, right top, left top, color-stop(3.66%, #430CB9), color-stop(108.54%, #9E00FF)), #ffffff;
   background: linear-gradient(270deg, #430CB9 3.66%, #9E00FF 108.54%), #ffffff;
   font-family: "Open Sans";
   font-size: 1.3333333333rem;
@@ -342,77 +259,17 @@ h5 {
 }
 .amazingServices__content {
   margin-top: 78px;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-rows: (157px)[2] auto;
   grid-template-rows: repeat(2, 157px) auto;
-  -ms-grid-columns: auto (31.3088109495%)[2];
   grid-template-columns: auto repeat(2, 31.3088109495%);
 }
-.amazingServices__content > *:nth-child(1) {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-}
-.amazingServices__content > *:nth-child(2) {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-}
-.amazingServices__content > *:nth-child(3) {
-  -ms-grid-row: 1;
-  -ms-grid-column: 3;
-}
-.amazingServices__content > *:nth-child(4) {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-}
-.amazingServices__content > *:nth-child(5) {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
-}
-.amazingServices__content > *:nth-child(6) {
-  -ms-grid-row: 2;
-  -ms-grid-column: 3;
-}
-.amazingServices__content > *:nth-child(7) {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-}
-.amazingServices__content > *:nth-child(8) {
-  -ms-grid-row: 3;
-  -ms-grid-column: 2;
-}
-.amazingServices__content > *:nth-child(9) {
-  -ms-grid-row: 3;
-  -ms-grid-column: 3;
-}
 .amazingServices__content > img {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 3;
   grid-row: 1/4;
 }
 .amazingServices__infoCard {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 25px 60px;
   grid-template-rows: 25px 60px;
-  -ms-grid-columns: (auto)[2];
   grid-template-columns: repeat(2, auto);
-}
-.amazingServices__infoCard > *:nth-child(1) {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-}
-.amazingServices__infoCard > *:nth-child(2) {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-}
-.amazingServices__infoCard > *:nth-child(3) {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-}
-.amazingServices__infoCard > *:nth-child(4) {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
 }
 .amazingServices a {
   margin-top: 12px;
@@ -421,7 +278,6 @@ h5 {
   content: "";
 }
 .amazingServices .infoCard__circle {
-  -ms-grid-row-span: 2;
   grid-row: span 2;
   width: 100px;
   height: 100px;
@@ -443,13 +299,10 @@ h5 {
 
 .ourCompany {
   margin-top: 107px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 .ourCompany__block {
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
+  flex-shrink: 0;
   width: 66.7236954662%;
   background: #ffffff;
   border-radius: 30px;
@@ -475,8 +328,7 @@ h5 {
   position: relative;
   top: 60px;
   left: -45px;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
+  flex-shrink: 0;
 }
 .ourCompany span::after {
   content: url(../img/Subtract.png);
@@ -487,20 +339,16 @@ h5 {
 
 .difference {
   margin-top: 102px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 .difference > span {
   z-index: 20;
   position: relative;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
+  flex-shrink: 0;
 }
 .difference > span::before {
   content: url(../img/Subtract.png);
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
+  transform: rotate(180deg);
   position: absolute;
   top: 231px;
   left: -67px;
@@ -525,13 +373,8 @@ h5 {
 }
 .difference__block__statistic {
   margin-top: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 50px;
 }
 .difference__block__statistic :first-child .statistic__amount span {
@@ -551,32 +394,12 @@ h5 {
 }
 .difference__block__statistic .statistic {
   width: 344px;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 21px auto;
   grid-template-rows: 21px auto;
-  -ms-grid-columns: (auto)[2];
   grid-template-columns: repeat(2, auto);
-}
-.difference__block__statistic .statistic > *:nth-child(1) {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-}
-.difference__block__statistic .statistic > *:nth-child(2) {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-}
-.difference__block__statistic .statistic > *:nth-child(3) {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-}
-.difference__block__statistic .statistic > *:nth-child(4) {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
 }
 .difference__block__statistic .statistic__amount {
   margin-right: 25px;
-  -ms-grid-row-span: 2;
   grid-row: span 2;
   width: 118px;
   height: 118px;

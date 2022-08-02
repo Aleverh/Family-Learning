@@ -16,67 +16,26 @@
             <img src="./img/pizzalogo.png" alt="logo" class="header__logo">
             <menu class="header__menu">
                 <a href="" class="header__link">
-                    <p>First link</p>
+                    <p>Піца</p>
                 </a>
                 <a href="" class="header__link">
-                    <p>Second link</p>
+                    <p>Десерти</p>
                 </a>
                 <a href="" class="header__link">
-                    <p>Third link</p>
+                    <p>Салати</p>
+                </a>
+                <a href="" class="header__link">
+                    <p>Напої</p>
                 </a>
             </menu>
-            <div class="header__basket"><img src="./img/basket.png" alt="basket"></div>
+            <div class="header__basket"><img class="basket" src="./img/basket.png" alt="basket"></div>
         </header>
         <section class="menu content">
-            <div class="menu__card card">
-                <div class="card__img"><img src="./img/pizza1.png" alt=""></div>
-                <h3 class="card__title">Pizza #1</h3>
-                <p class="card__description">Description of Pizza#1</p>
-                <input type="radio" name="chooseSize" checked>
-                <input type="radio" name="choosePrice">
-                <input type="radio" name="chooseSize">
-                <input type="radio" name="choosePrice">
-                <span class="price">5.50$</span>
-                <span class="size">40sm</span>
-                <button class="card__button">Add to basket</button>
-            </div>
-            <div class="menu__card card">
-                <div class="card__img"><img src="./img/pizza2.png" alt=""></div>
-                <h3 class="card__title">Pizza #2</h3>
-                <p class="card__description">Description of Pizza#2</p>
-                <span class="price">5.50$</span>
-                <span class="size">40sm</span>
-                <button class="card__button">Add to basket</button>
-            </div>
-            <div class="menu__card card">
-                <div class="card__img"><img src="./img/pizza3.png" alt=""></div>
-                <h3 class="card__title">Pizza #3</h3>
-                <p class="card__description">Description of Pizza#3</p>
-                <span class="price">7.00$</span>
-                <span class="size">40sm</span>
-                <button class="card__button">Add to basket</button>
-            </div>
-            <div class="menu__card card">
-                <div class="card__img"><img src="./img/pizza4.png" alt=""></div>
-                <h3 class="card__title">Pizza #4</h3>
-                <p class="card__description">Description of Pizza#4</p>
-                <span class="price">7.00$</span>
-                <span class="size">40sm</span>
-                <button class="card__button">Add to basket</button>
-            </div>
         </section>
     </div>
     <div class="modal hidden">
-        <div class="modal__close">&times;</div>
-        <div class="modal__empty">Just add some pizza!</div>
-        <div class="addedItem">
-            <img src="./img/pizza1.png" alt="" class="addedItem__img">
-            <span class="addedItem__name">Pizza#1</span>
-            <img src="./img/minusbutton.png" alt="" class="addedItem__minusButton">
-            <img src="./img/plusbutton.png" alt="" class="addedItem__plusButton">
-            <span class="addedItem__amount">0</span>
-            <span class="addedItem__cost">0,00$</span>
-        </div>
+        <div class="modal__close"><span class="close">&times;</span></div>
+        <div class="modal__empty">Додай собі піци</div>
     </div>
     <div class="overlay hidden"></div>
     <script src="./script/script.js"></script>
